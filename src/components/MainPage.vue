@@ -1,10 +1,74 @@
 <template>
-  <div>
-    <!-- <div class="container-consulting row row-cols-2"> -->
-    <!-- <div class="col" />
-      <div class="col" />
-    </div> -->
-  </div>
+  <main>
+    <!-- THE COMPANY section-->
+    <section class="the-company pt-5 pb-5">
+      <div class="container pt-4 pb-1">
+        <div class="row row-cols-2">
+          <div class="col-6 p-3">
+            <span class="fw-bold">ABOUT THE NETWORK</span>
+            <div class="d-flex pt-3 pb-2">
+              <h2 class="fw-bold the">The</h2>
+              <h2 class="fw-bold company">Company</h2>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corr mollitia voluptatibus
+              provident vel, harum numquam neque, voluptatum temporibus saepe hic ipsum
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, at nisi cum
+              deleniti a sed, velit facilis
+            </p>
+          </div>
+          <div class="col-6 p-4 mt-3">
+            <div class="d-flex gap-4">
+              <div>
+                <font-awesome-icon icon="fa-solid fa-award" class="icon" />
+                <h5 class="d-inline">Tradition</h5>
+                <p class="mt-3">
+                  Lorem ipsum dolor sit amet <br />
+                  consectetur adipisicing elit.
+                </p>
+              </div>
+              <div>
+                <font-awesome-icon icon="fa-solid fa-lock" class="icon" />
+                <h5 class="d-inline">Security</h5>
+                <p class="mt-3">
+                  Lorem ipsum dolor sit amet <br />
+                  consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+
+            <div class="d-flex gap-4 mt-4">
+              <div>
+                <font-awesome-icon icon="fa-solid fa-pen-to-square" class="icon" />
+                <h5 class="d-inline">Certificate</h5>
+                <p class="mt-3">
+                  Lorem ipsum dolor sit amet <br />
+                  consectetur adipisicing elit.
+                </p>
+              </div>
+              <div>
+                <font-awesome-icon icon="fa-solid fa-graduation-cap" class="icon" />
+                <h5 class="d-inline">Expertise</h5>
+                <p class="mt-3">
+                  Lorem ipsum dolor sit amet <br />
+                  consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES Section -->
+    <section>
+      <div class="container">
+        <span>OUR BUSINESS AREA</span>
+      </div>
+    </section>
+  </main>
 </template>
 
 <script>
@@ -12,10 +76,30 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
-// .container-consulting {
-//   background-image: url(../../public/bg-6.jpg);
-//   background-size: cover;
-//   background-position-y: -7.5rem;
-//   height: 35rem;
-// }
+// THE COMPANY section
+.the-company {
+  background-color: #111117;
+  color: white;
+  span {
+    color: #058283;
+  }
+  p {
+    color: #aaabb4;
+  }
+  .icon {
+    color: #058283;
+    font-size: 1.3rem;
+    margin-right: 0.4rem;
+  }
+  .the {
+    background-color: #0e272d;
+    padding: 0.4rem 0.6rem;
+    border-radius: 3px;
+  }
+  .company {
+    padding: 0.4rem 0.4rem;
+  }
+}
+
+// SERVICES Section
 </style>

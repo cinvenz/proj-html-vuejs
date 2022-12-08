@@ -130,6 +130,9 @@ header {
     }
   }
 }
+h1 {
+  color: #21333e;
+}
 li {
   list-style: none;
 }

@@ -7,6 +7,10 @@ import {
   faClock,
   faPhone,
   faEnvelope,
+  faAward,
+  faLock,
+  faPenToSquare,
+  faGraduationCap,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import {
@@ -20,7 +24,7 @@ import App from "./App.vue";
 Vue.component("FontAwesomeIcon", FontAwesomeIcon);
 
 library.add(faChevronRight, faHatWizard, faClock, faPhone, faEnvelope, faFacebook, faFacebookF);
-library.add(faTwitter, faLinkedinIn);
+library.add(faTwitter, faLinkedinIn, faAward, faLock, faPenToSquare, faGraduationCap);
 
 Vue.config.productionTip = false;
 
