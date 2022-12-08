@@ -1,8 +1,8 @@
 <template>
   <div class="container-services">
     <div v-for="services in arrServices" :key="services.nameservices" class="services-card">
-      <font-awesome-icon :key="index" :icon="['fas', services.iconservices]" />
-      <font-awesome-icon :key="index" :icon="['fas', services.arrow]" />
+      <font-awesome-icon :key="services.nameservices" :icon="['fas', services.iconservices]" />
+      <font-awesome-icon :key="services.textservices" :icon="['fas', services.arrow]" />
       <h5>{{ services.nameservices }}</h5>
       <p>{{ services.textservices }}</p>
     </div>

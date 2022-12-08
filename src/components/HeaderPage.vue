@@ -61,7 +61,6 @@
             <label class="d-flex gap-2 mb-2" for="i">
               <input
                 id="validationTooltip01"
-                v-model="message"
                 type="text"
                 class="form-control"
                 value=""

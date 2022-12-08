@@ -74,7 +74,7 @@
           </p>
           <button type="button" class="btn btn-primary text-uppercase btn-touch">See all</button>
         </div>
-
+        <!-- CardService -->
         <div>
           <CardServices :arr-services="arrServices" />
         </div>
@@ -135,15 +135,41 @@
         <div class="col-1 container-process" />
       </div>
     </section>
+
+    <!-- TEAM Section -->
+    <section class="team-section">
+      <div class="container">
+        <div class="row row-cols-2">
+          <div class="col-8">
+            <span>WE LIKE WHAT WE DO</span>
+            <div class="d-flex">
+              <h2 class="fw-bold the">Team</h2>
+              <h2 class="fw-bold company">of Experts</h2>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis porro sed quos.
+              Dignissimos corporis
+            </p>
+            <!-- CardTeam -->
+            <div>
+              <CardTeam :arr-team="arrTeam" />
+            </div>
+          </div>
+          <div class="col-4">a</div>
+        </div>
+      </div>
+    </section>
   </main>
 </template>
 
 <script>
 import CardServices from "@/components/CardServices.vue";
+import CardTeam from "@/components/CardTeam.vue";
 
 export default {
   components: {
     CardServices,
+    CardTeam,
   },
   data() {
     return {
@@ -185,6 +211,41 @@ export default {
           textservices: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         },
       ],
+
+      arrTeam: [
+        {
+          imageteam: "team-1.jpg",
+          nameteam: "David Cooper",
+          workteam: "CTO & CO-FOUNDER",
+          facebookteam: "fa-facebook-f",
+          twitterteam: "fa-twitter",
+          linkedinteam: "fa-linkedin-in",
+        },
+        {
+          imageteam: "team-3.jpg",
+          nameteam: "Oliver Jones",
+          workteam: "CHIEF PROCUREMENT",
+          facebookteam: "fa-facebook-f",
+          twitterteam: "fa-twitter",
+          linkedinteam: "fa-linkedin-in",
+        },
+        {
+          imageteam: "team-2.jpg",
+          nameteam: "Emma Lopez",
+          workteam: "CHIEF MARKETING",
+          facebookteam: "fa-facebook-f",
+          twitterteam: "fa-twitter",
+          linkedinteam: "fa-linkedin-in",
+        },
+        {
+          imageteam: "team-4.jpg",
+          nameteam: "T.Jhonson",
+          workteam: "CEO & PRESIDENT",
+          facebookteam: "fa-facebook-f",
+          twitterteam: "fa-twitter",
+          linkedinteam: "fa-linkedin-in",
+        },
+      ],
     };
   },
 };
@@ -206,14 +267,14 @@ export default {
     font-size: 1.3rem;
     margin-right: 0.4rem;
   }
-  .the {
-    background-color: #0e272d;
-    padding: 0.4rem 0.6rem;
-    border-radius: 3px;
-  }
-  .company {
-    padding: 0.4rem 0.4rem;
-  }
+}
+.the {
+  background-color: #0e272d;
+  padding: 0.4rem 0.6rem;
+  border-radius: 3px;
+}
+.company {
+  padding: 0.4rem 0.4rem;
 }
 
 // SERVICES Section
@@ -242,7 +303,6 @@ export default {
     }
   }
 }
-
 .process {
   color: #058283;
   background-color: #daeced;
@@ -251,5 +311,14 @@ export default {
 }
 .management {
   padding: 0.4rem 0.4rem;
+}
+
+// TEAM Section
+.team-section {
+  background-color: #111117;
+  color: white;
+  span {
+    color: #058283;
+  }
 }
 </style>
