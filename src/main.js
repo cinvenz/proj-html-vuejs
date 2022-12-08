@@ -17,6 +17,7 @@ import {
   faPlane,
   faEarthEurope,
   faArrowRight,
+  faInbox,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import {
@@ -32,6 +33,7 @@ Vue.component("FontAwesomeIcon", FontAwesomeIcon);
 library.add(faChevronRight, faHatWizard, faClock, faPhone, faEnvelope, faFacebook, faFacebookF);
 library.add(faTwitter, faLinkedinIn, faAward, faLock, faPenToSquare, faGraduationCap);
 library.add(faNetworkWired, faToolbox, faChartSimple, faPlane, faEarthEurope, faArrowRight);
+library.add(faInbox);
 
 Vue.config.productionTip = false;
 
