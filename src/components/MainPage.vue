@@ -76,7 +76,7 @@
         </div>
 
         <div>
-          <CardServices />
+          <CardServices :arr-services="arrServices" />
         </div>
       </div>
     </section>
@@ -94,39 +94,39 @@ export default {
     return {
       arrServices: [
         {
-          iconservices: "fa-solid fa-network-wired",
-          arrow: "Audit & Assurance",
-          nameservices: "1 (305) 1234-5678",
+          iconservices: "fa-network-wired",
+          arrow: "fa-arrow-right",
+          nameservices: "Audit & Assurance",
           textservices: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         },
         {
-          iconservices: "fa-solid fa-toolbox",
-          arrow: "Financial Advisory",
-          nameservices: "1 (305) 1234-5678",
+          iconservices: "fa-toolbox",
+          arrow: "fa-arrow-right",
+          nameservices: "Financial Advisory",
           textservices: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         },
         {
-          iconservices: "fa-solid fa-chart-simple",
-          arrow: "Analytics and M&A",
-          nameservices: "1 (305) 1234-5678",
+          iconservices: "fa-chart-simple",
+          arrow: "fa-arrow-right",
+          nameservices: "Analytics and M&A",
           textservices: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         },
         {
-          iconservices: "fa-solid fa-plane",
-          arrow: "Middle Marketing",
-          nameservices: "1 (305) 1234-5678",
+          iconservices: "fa-plane",
+          arrow: "fa-arrow-right",
+          nameservices: "Middle Marketing",
           textservices: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         },
         {
-          iconservices: "fa-solid fa-earth-europe",
-          arrow: "Legal Consulting",
-          nameservices: "1 (305) 1234-5678",
+          iconservices: "fa-earth-europe",
+          arrow: "fa-arrow-right",
+          nameservices: "Legal Consulting",
           textservices: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         },
         {
-          iconservices: "fa-solid fa-inbox",
-          arrow: "Regulatory Risk",
-          nameservices: "1 (305) 1234-5678",
+          iconservices: "fa-inbox",
+          arrow: "fa-arrow-right",
+          nameservices: "Regulatory Risk",
           textservices: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         },
       ],
