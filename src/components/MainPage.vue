@@ -66,13 +66,73 @@
     <section>
       <div class="container">
         <span>OUR BUSINESS AREA</span>
+        <h2>Excellence in SERVICES</h2>
+        <div class="d-flex">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi assumenda quis similique,
+            voluptate veritatis cupiditate enim laudantium
+          </p>
+          <button type="button" class="btn btn-primary text-uppercase btn-touch">See all</button>
+        </div>
+
+        <div>
+          <CardServices />
+        </div>
       </div>
     </section>
   </main>
 </template>
 
 <script>
-export default {};
+import CardServices from "@/components/CardServices.vue";
+
+export default {
+  components: {
+    CardServices,
+  },
+  data() {
+    return {
+      arrServices: [
+        {
+          iconservices: "fa-solid fa-network-wired",
+          arrow: "Audit & Assurance",
+          nameservices: "1 (305) 1234-5678",
+          textservices: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        },
+        {
+          iconservices: "fa-solid fa-toolbox",
+          arrow: "Financial Advisory",
+          nameservices: "1 (305) 1234-5678",
+          textservices: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        },
+        {
+          iconservices: "fa-solid fa-chart-simple",
+          arrow: "Analytics and M&A",
+          nameservices: "1 (305) 1234-5678",
+          textservices: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        },
+        {
+          iconservices: "fa-solid fa-plane",
+          arrow: "Middle Marketing",
+          nameservices: "1 (305) 1234-5678",
+          textservices: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        },
+        {
+          iconservices: "fa-solid fa-earth-europe",
+          arrow: "Legal Consulting",
+          nameservices: "1 (305) 1234-5678",
+          textservices: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        },
+        {
+          iconservices: "fa-solid fa-inbox",
+          arrow: "Regulatory Risk",
+          nameservices: "1 (305) 1234-5678",
+          textservices: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -102,4 +162,12 @@ export default {};
 }
 
 // SERVICES Section
+.btn-touch {
+  height: 2.2rem;
+  width: 9rem;
+  padding: 0.1rem 0rem;
+  border-radius: 3px;
+  background-color: #058283;
+  border: none;
+}
 </style>
