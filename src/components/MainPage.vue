@@ -63,7 +63,7 @@
     </section>
 
     <!-- SERVICES Section -->
-    <section>
+    <section class="services">
       <div class="container">
         <span>OUR BUSINESS AREA</span>
         <h2>Excellence in SERVICES</h2>
@@ -78,6 +78,61 @@
         <div>
           <CardServices :arr-services="arrServices" />
         </div>
+      </div>
+    </section>
+
+    <!-- PROCESS Section -->
+    <section>
+      <div class="text-center">
+        <span class="text-uppercase">How it works in practice</span>
+        <div class="d-flex justify-content-center">
+          <h2 class="fw-bold process">Process</h2>
+          <h2 class="fw-bold management">Management</h2>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolorum illo nulla totam
+          obcaecati, accusantium eaque at laborum <br />
+          facere eos, velit enim ut optio odio vero alias veritatis ab! Aut.
+        </p>
+      </div>
+      <div class="row row-cols-5 text-center pt-3">
+        <div class="col-1 container-process" />
+        <div class="col-2 container-process">
+          <div class="container-number">
+            <span>01</span>
+          </div>
+          <h5>Collection of Information</h5>
+          <p>Lorem ipsum dolor sit amet consectetur</p>
+        </div>
+        <div class="col-2 container-process">
+          <div class="container-number">
+            <span>01</span>
+          </div>
+          <h5>Collection of Information</h5>
+          <p>Lorem ipsum dolor sit amet consectetur</p>
+        </div>
+        <div class="col-2 container-process">
+          <div class="container-number">
+            <span>01</span>
+          </div>
+          <h5>Collection of Information</h5>
+          <p>Lorem ipsum dolor sit amet consectetur</p>
+        </div>
+        <div class="col-2 container-process">
+          <div class="container-number">
+            <span>01</span>
+          </div>
+          <h5>Collection of Information</h5>
+          <p>Lorem ipsum dolor sit amet consectetur</p>
+        </div>
+        <div class="col-2 container-process">
+          <div class="container-number">
+            <span>01</span>
+          </div>
+          <h5>Collection of Information</h5>
+          <p>Lorem ipsum dolor sit amet consectetur</p>
+        </div>
+        <div class="col-1 container-process" />
       </div>
     </section>
   </main>
@@ -162,6 +217,9 @@ export default {
 }
 
 // SERVICES Section
+.services {
+  background-color: #eef4ed;
+}
 .btn-touch {
   height: 2.2rem;
   width: 9rem;
@@ -169,5 +227,29 @@ export default {
   border-radius: 3px;
   background-color: #058283;
   border: none;
+}
+
+// PROCESS Section
+.container-process {
+  border-top: 3px solid #daeced;
+  .container-number {
+    margin-top: -0.6rem;
+    span {
+      background-color: #daeced;
+      font-weight: bold;
+      padding: 0.5rem;
+      border-radius: 50px;
+    }
+  }
+}
+
+.process {
+  color: #058283;
+  background-color: #daeced;
+  padding: 0.4rem 0.6rem;
+  border-radius: 3px;
+}
+.management {
+  padding: 0.4rem 0.4rem;
 }
 </style>
