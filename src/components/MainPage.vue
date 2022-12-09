@@ -64,13 +64,17 @@
 
     <!-- SERVICES Section -->
     <section class="services">
-      <div class="container">
-        <span>OUR BUSINESS AREA</span>
-        <h2>Excellence in SERVICES</h2>
-        <div class="d-flex">
+      <div class="container services-flex">
+        <span class="fw-bold">OUR BUSINESS AREA</span>
+        <div class="d-flex pt-3 pb-2">
+          <h2 class="fw-bold excellence">Excellence in</h2>
+          <h2 class="fw-bold process">Services</h2>
+        </div>
+        <div class="d-flex justify-content-between mb-3">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi assumenda quis similique,
-            voluptate veritatis cupiditate enim laudantium
+            We Are leaders in providing consultancy service whit a set of cutting- edge technologies
+            and a tearm of <br />
+            experienced and renowned professionals. These are some options that you can hire.
           </p>
           <button type="button" class="btn btn-primary text-uppercase btn-touch">See all</button>
         </div>
@@ -82,17 +86,17 @@
     </section>
 
     <!-- PROCESS Section -->
-    <section>
-      <div class="text-center">
-        <span class="text-uppercase">How it works in practice</span>
-        <div class="d-flex justify-content-center">
+    <section class="process-section">
+      <div class="text-center mb-3">
+        <span class="text-uppercase span-process fw-bold">How it works in practice</span>
+        <div class="d-flex justify-content-center mt-3 mb-2">
           <h2 class="fw-bold process">Process</h2>
           <h2 class="fw-bold management">Management</h2>
         </div>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolorum illo nulla totam
-          obcaecati, accusantium eaque at laborum <br />
-          facere eos, velit enim ut optio odio vero alias veritatis ab! Aut.
+          We work with innovative methodologies to ensure that the entire reformatting process is
+          done <br />
+          from start to finish as planned.
         </p>
       </div>
       <div class="row row-cols-5 text-center pt-3">
@@ -101,35 +105,35 @@
           <div class="container-number">
             <span>01</span>
           </div>
-          <h5>Collection of Information</h5>
+          <h5 class="mt-4">Collection of Information</h5>
           <p>Lorem ipsum dolor sit amet consectetur</p>
         </div>
         <div class="col-2 container-process">
           <div class="container-number">
-            <span>01</span>
+            <span>02</span>
           </div>
-          <h5>Collection of Information</h5>
+          <h5 class="mt-4">Strategic Planning</h5>
           <p>Lorem ipsum dolor sit amet consectetur</p>
         </div>
         <div class="col-2 container-process">
           <div class="container-number">
-            <span>01</span>
+            <span>03</span>
           </div>
-          <h5>Collection of Information</h5>
+          <h5 class="mt-4">Assignment of responsabilities</h5>
           <p>Lorem ipsum dolor sit amet consectetur</p>
         </div>
         <div class="col-2 container-process">
           <div class="container-number">
-            <span>01</span>
+            <span>04</span>
           </div>
-          <h5>Collection of Information</h5>
+          <h5 class="mt-4">Formatting Process</h5>
           <p>Lorem ipsum dolor sit amet consectetur</p>
         </div>
         <div class="col-2 container-process">
           <div class="container-number">
-            <span>01</span>
+            <span>05</span>
           </div>
-          <h5>Collection of Information</h5>
+          <h5 class="mt-4">Continuity Formalization</h5>
           <p>Lorem ipsum dolor sit amet consectetur</p>
         </div>
         <div class="col-1 container-process" />
@@ -142,13 +146,14 @@
         <div class="row row-cols-2">
           <div class="col-8">
             <span>WE LIKE WHAT WE DO</span>
-            <div class="d-flex">
+            <div class="d-flex mt-3 mb-2">
               <h2 class="fw-bold the">Team</h2>
               <h2 class="fw-bold company">of Experts</h2>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis porro sed quos.
-              Dignissimos corporis
+              Ethics and integry are the bases on which our professional build ther caracters.
+              <br />
+              They are fundamentals that become daily attitudes.
             </p>
             <!-- CardTeam -->
             <div>
@@ -157,22 +162,23 @@
           </div>
           <div class="col-4 d-flex align-items-center">
             <div class="president-speech">
-              <h5>President Speech</h5>
+              <h5 class="pb-3">President Speech</h5>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. A earum magnam neque culpa
-                explicabo et,
+                explicabo et.
               </p>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. A earum magnam neque culpa
-                explicabo et,
+                explicabo et, sit amet consectetur adipisicing elit. A earum magnam neque culpa
+                explicabo.
               </p>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. A earum magnam neque culpa
-                explicabo et,
+                explicabo et.
               </p>
               <div class="d-flex justify-content-between">
                 <p class="fw-bold">T.Jhonson</p>
-                <font-awesome-icon icon="fa-solid fa-quote-right" />
+                <font-awesome-icon icon="fa-solid fa-quote-right" class="text-black-50 fs-4" />
               </div>
             </div>
           </div>
@@ -181,19 +187,19 @@
     </section>
 
     <!-- NEWS Section -->
-    <section>
+    <section class="news-section">
       <div class="container">
         <span>OUR EDITOR CONTENT</span>
-        <div class="d-flex">
-          <h2 class="fw-bold management">Latest</h2>
+        <div class="d-flex pt-3 pb-2">
+          <h2 class="fw-bold excellence">Latest</h2>
           <h2 class="fw-bold process">News</h2>
         </div>
         <div class="d-flex justify-content-between">
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          <p>Every week we publish content about what is best in the business world.</p>
         </div>
         <!-- CardNews -->
         <div>
-          <CardNews :arr-news="arrNews" />
+          <CardNews :arr-news="arrNews" :arr-news2="arrNews2" />
         </div>
       </div>
     </section>
@@ -344,6 +350,9 @@ export default {
           imagenews: "news-3.jpg",
           textnews: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         },
+      ],
+
+      arrNews2: [
         {
           imagenews2: "news-4.jpg",
           textnews2: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
@@ -387,6 +396,24 @@ export default {
 // SERVICES Section
 .services {
   background-color: #eef4ed;
+  height: 48rem;
+  display: flex;
+  align-items: center;
+  font-size: 0.7rem;
+  .services-flex {
+    height: 30rem;
+    margin-bottom: 5rem;
+    span {
+      color: #058283;
+    }
+  }
+  p {
+    color: #aaabb4;
+  }
+}
+.excellence {
+  padding-top: 0.4rem;
+  padding-right: 0.4rem;
 }
 .btn-touch {
   height: 2.2rem;
@@ -398,6 +425,15 @@ export default {
 }
 
 // PROCESS Section
+.process-section {
+  height: 32rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  p {
+    color: #a2aaaf;
+  }
+}
 .container-process {
   border-top: 3px solid #daeced;
   .container-number {
@@ -407,8 +443,13 @@ export default {
       font-weight: bold;
       padding: 0.5rem 0.6rem;
       border-radius: 50px;
+      color: #058283;
     }
   }
+}
+.span-process {
+  color: #058283;
+  font-size: 0.7rem;
 }
 .process {
   color: #058283;
@@ -424,15 +465,43 @@ export default {
 .team-section {
   background-color: #111117;
   color: white;
+  height: 38rem;
+  display: flex;
+  align-items: center;
+  font-size: 0.7rem;
   span {
     color: #058283;
+    font-size: 0.7rem;
+    font-weight: bold;
+  }
+  p {
+    color: #a2aaaf;
+  }
+  .president-speech {
+    background-color: #058283;
+    border-radius: 3px;
+    padding: 1.5rem;
+    font-size: 0.7rem;
+    p {
+      color: #eef4ed;
+    }
   }
 }
-.president-speech {
-  background-color: #058283;
-  border-radius: 3px;
-  padding: 1.5rem;
-  font-size: 0.7rem;
+
+// News Section
+.news-section {
+  display: flex;
+  align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+  span {
+    color: #058283;
+    font-size: 0.7rem;
+    font-weight: bold;
+  }
+  p {
+    color: #a2aaaf;
+  }
 }
 
 // KNOW FIRST Section
@@ -450,5 +519,8 @@ export default {
   p {
     color: #aaabb4;
   }
+}
+button:hover {
+  background-color: #01a6a6;
 }
 </style>

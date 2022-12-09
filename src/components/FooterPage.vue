@@ -68,7 +68,7 @@
           <div class="col">
             <span>Enjoy the low price. We are thraking ani in tention of piracy.</span>
           </div>
-          <div class="col credits">
+          <div class="col credits d-flex justify-content-end">
             <div>
               2020 NEXGEN is Proudly Powered by <span class="coding"><a href="">Codings</a></span
               >.
@@ -101,6 +101,7 @@ export default {
 .last-container-footer {
   background-color: #0d0d11;
   color: #aaabb4;
+  font-size: 0.7rem;
 }
 .nex {
   background-color: #0e272d;

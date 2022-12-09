@@ -1,7 +1,7 @@
 <template>
-  <div class="d-flex container-cardteam">
+  <div class="d-flex container-cardteam mt-5">
     <div v-for="objTeam in arrTeam" :key="objTeam.workteam" class="cardteam">
-      <img class="img-fluid" :src="objTeam.imageteam" alt="" />
+      <img class="img-fluid me-3" :src="objTeam.imageteam" alt="" />
       <div class="p-2">
         <h5>{{ objTeam.nameteam }}</h5>
         <p>{{ objTeam.workteam }}</p>
@@ -50,12 +50,17 @@ export default {
       padding: 0.5rem 0.6rem;
       background-color: #0e272d;
       border-radius: 50px;
+      color: #058283;
     }
     .team-icon2 {
       padding: 0.5rem;
       background-color: #0e272d;
       border-radius: 50px;
+      color: #058283;
     }
+  }
+  p {
+    color: #a2aaaf;
   }
 }
 </style>

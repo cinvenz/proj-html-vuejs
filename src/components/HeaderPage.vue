@@ -41,7 +41,7 @@
         </ul>
         <div class="item">
           <ul v-for="objNav in arrNav" :key="objNav" class="ul-item">
-            <li class="text-uppercase">
+            <li class="text-uppercase text-nav">
               {{ objNav }}
             </li>
           </ul>
@@ -153,6 +153,12 @@ li {
     }
   }
 }
+
+.text-nav:hover {
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid #058283;
+  cursor: pointer;
+}
 .btn-touch {
   height: 2.2rem;
   width: 9rem;
@@ -209,5 +215,8 @@ span {
   border-radius: 3px;
   border: 1px solid #058283;
   color: #058283;
+}
+button:hover {
+  background-color: #01a6a6;
 }
 </style>
