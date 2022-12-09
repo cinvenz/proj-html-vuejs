@@ -15,12 +15,12 @@
         </div>
       </div>
       <div v-for="objNews2 in arrNews2" :key="objNews2.imagenews2" class="card-news">
-        <di class="cardimg2">
+        <div class="cardimg2">
           <img v-show="!isClicked" class="img-fluid" :src="objNews2.imagenews2" alt="" />
           <p v-show="!isClicked">
             {{ objNews2.textnews2 }}
           </p>
-        </di>
+        </div>
       </div>
     </div>
   </div>
@@ -55,13 +55,16 @@ export default {
     flex-basis: 30.87%;
     .cardimg {
       position: relative;
-      z-index: 10;
-      background-color: #a2aaaf;
+      background-color: black;
+      border-radius: 7px;
+
+      cursor: pointer;
       img {
         border-radius: 7px;
-        z-index: -2;
+        opacity: 0.5;
       }
       img:hover {
+        opacity: 1;
       }
       p {
         padding: 2rem;
@@ -74,13 +77,21 @@ export default {
     }
     .cardimg2 {
       position: relative;
+      background-color: black;
+      border-radius: 7px;
+      height: 100%;
+      cursor: pointer;
       img {
         border-radius: 7px;
+        opacity: 0.5;
+      }
+      img:hover {
+        opacity: 1;
       }
       p {
         padding: 2rem;
         position: absolute;
-        bottom: -9rem;
+        bottom: -1rem;
         color: white;
         font-weight: 800;
         font-size: 1rem;
