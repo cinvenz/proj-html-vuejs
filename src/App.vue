@@ -2,7 +2,12 @@
   <div>
     <HeaderPage :arr-contacts="arrContacts" :arr-nav="arrNav" />
     <MainPage />
-    <FooterPage />
+    <FooterPage
+      :arr-contacts="arrContacts"
+      :arr-about="arrAbout"
+      :arr-services="arrServices"
+      :arr-support="arrSupport"
+    />
   </div>
 </template>
 
@@ -36,6 +41,30 @@ export default {
         },
       ],
       arrNav: ["home", "about", "services", "process", "team", "blog"],
+      arrAbout: [
+        "The Company",
+        "Institutional",
+        "Social & Events",
+        "innovation",
+        "Environment",
+        "Technology",
+      ],
+      arrServices: [
+        "Audit & Assurance",
+        "Finalcial Advisory",
+        "Analytics M&A",
+        "Middle Marketing",
+        "Legal Consulting",
+        "regulatory Risk",
+      ],
+      arrSupport: [
+        "Responsability",
+        "Terms of Use",
+        "About Cookies",
+        "Privacy Policy",
+        "Accessibility",
+        "information",
+      ],
     };
   },
 };
