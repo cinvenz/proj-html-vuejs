@@ -2,33 +2,39 @@
   <section>
     <!-- CONTACT FOOTER Section -->
     <div class="footer">
-      <div class="container footer">
+      <div class="container">
         <div class="row row-cols-2">
           <div class="col-3">
-            <div class="d-flex">
+            <div class="d-flex mb-3">
               <span class="nex text-uppercase fw-bold">nex</span>
               <span class="gen text-uppercase fw-bold">gen</span>
             </div>
-            <p>A functional HTML Template for Corporate e Business.</p>
+            <p class="mb-4">
+              A functional HTML Template <br />
+              for Corporate e Business.
+            </p>
 
-            <ul v-for="contact in arrContacts" :key="contact.phone" class="">
-              <li class="me-2 d-inline">
-                <font-awesome-icon :key="contact.tel" :icon="['fas', contact.tel]" />
-              </li>
-              <li class="me-4 d-inline">
+            <ul v-for="contact in arrContacts" :key="contact.phone" class="contacts">
+              <li class="me-2 d-inline mb-2">
+                <font-awesome-icon :key="contact.tel" :icon="['fas', contact.tel]" class="me-1" />
                 {{ contact.phone }}
               </li>
-              <li class="me-2 d-inline">
-                <font-awesome-icon :key="contact.letter" :icon="['fas', contact.letter]" />
-              </li>
-              <li class="d-inline">
+
+              <li class="me-2 d-inline mb-2">
+                <font-awesome-icon
+                  :key="contact.letter"
+                  :icon="['fas', contact.letter]"
+                  class="me-1"
+                />
                 {{ contact.email }}
               </li>
 
-              <li class="me-2 d-inline">
-                <font-awesome-icon :key="contact.location" :icon="['fas', contact.location]" />
-              </li>
-              <li class="me-4 d-inline">
+              <li class="me-2 d-inline mb-2">
+                <font-awesome-icon
+                  :key="contact.location"
+                  :icon="['fas', contact.location]"
+                  class="me-1"
+                />
                 {{ contact.adress }}
               </li>
             </ul>
@@ -37,13 +43,17 @@
 
           <div class="col-9 d-flex list-array-footer">
             <div class="list-footer">
+              <h5 class="mb-3 ms-3">About</h5>
+
               <ul v-for="about in arrAbout" :key="about">
                 <li>
-                  <a href="">{{ about }}</a>
+                  <a class="link-list" href="">{{ about }}</a>
                 </li>
               </ul>
             </div>
             <div class="list-footer">
+              <h5 class="mb-3 ms-3">Services</h5>
+
               <ul v-for="services in arrServices" :key="services">
                 <li>
                   <a href="">{{ services }}</a>
@@ -51,6 +61,8 @@
               </ul>
             </div>
             <div class="list-footer">
+              <h5 class="mb-3 ms-3">Support</h5>
+
               <ul v-for="support in arrSupport" :key="support">
                 <li>
                   <a href="">{{ support }}</a>
@@ -96,13 +108,13 @@ export default {
 .footer {
   background-color: #111117;
   color: #aaabb4;
-}
-
-.last-container-footer {
-  background-color: #0d0d11;
-  color: #aaabb4;
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  margin: auto;
   font-size: 0.7rem;
 }
+
 .nex {
   background-color: #0e272d;
   padding: 0.5rem 0;
@@ -130,15 +142,59 @@ a {
   width: 9rem;
   padding: 0.1rem 0rem;
   border-radius: 3px;
-  background-color: #058283;
   border: none;
+  background-color: transparent;
+  color: white;
+  border: 1px solid #01a6a6;
+}
+.list-array-footer {
+  gap: 1rem;
 }
 .list-footer {
   flex-basis: 33%;
+  background-color: #19191f;
+  padding: 2rem;
+  border-radius: 7px;
+  ul {
+    margin-bottom: 0.3rem;
+    position: relative;
+    list-style: none;
+  }
+  li::before {
+    content: ">";
+    position: absolute;
+    left: 0.8rem;
+    bottom: -0.6rem;
+    font-size: 1.5rem;
+  }
+  a:hover {
+    color: white;
+  }
 }
 .credits {
   a {
     color: #058283;
   }
+}
+.contacts {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+h5 {
+  color: white;
+}
+
+button:hover {
+  background-color: #01a6a6;
+  border: 1px solid;
+}
+.last-container-footer {
+  background-color: #0d0d11;
+  color: #aaabb4;
+  font-size: 0.7rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
 }
 </style>

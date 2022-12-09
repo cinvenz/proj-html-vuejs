@@ -211,8 +211,8 @@
           <div class="row row-cols-2">
             <div class="col">
               <span>NEWSLETTER</span>
-              <div class="d-flex">
-                <h2 class="fw-bold the">Knows</h2>
+              <div class="d-flex mt-3 mb-2">
+                <h2 class="fw-bold the">Know</h2>
                 <h2 class="fw-bold company">First</h2>
               </div>
               <p>
@@ -225,7 +225,7 @@
                 <input
                   id="inputName"
                   type="text"
-                  class="form-control opacity-50"
+                  class="form-control opacity-50 input-knows"
                   placeholder="Name"
                 />
               </label>
@@ -233,12 +233,15 @@
                 <input
                   id="inputEmail"
                   type="email"
-                  class="form-control opacity-50"
+                  class="form-control opacity-50 input-knows"
                   placeholder="Email"
                 />
               </label>
               <div>
-                <button type="button" class="btn btn-primary text-uppercase btn-touch">
+                <button
+                  type="button"
+                  class="btn btn-primary text-uppercase btn-touch btn-subscribe"
+                >
                   SUBSCRIBE
                 </button>
               </div>
@@ -514,7 +517,9 @@ export default {
   align-items: center;
   color: white;
   span {
+    font-size: 0.7rem;
     color: #058283;
+    font-weight: bold;
   }
   p {
     color: #aaabb4;
@@ -522,5 +527,11 @@ export default {
 }
 button:hover {
   background-color: #01a6a6;
+}
+.input-knows {
+  width: 18rem;
+}
+.btn-subscribe {
+  width: 7.5rem;
 }
 </style>

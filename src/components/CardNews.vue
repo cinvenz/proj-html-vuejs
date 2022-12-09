@@ -52,7 +52,7 @@ export default {
   flex-wrap: wrap;
   gap: 2rem;
   .card-news {
-    flex-basis: 30.87%;
+    flex-basis: 30.89%;
     .cardimg {
       position: relative;
       background-color: black;
