@@ -155,7 +155,89 @@
               <CardTeam :arr-team="arrTeam" />
             </div>
           </div>
-          <div class="col-4">a</div>
+          <div class="col-4 d-flex align-items-center">
+            <div class="president-speech">
+              <h5>President Speech</h5>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. A earum magnam neque culpa
+                explicabo et,
+              </p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. A earum magnam neque culpa
+                explicabo et,
+              </p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. A earum magnam neque culpa
+                explicabo et,
+              </p>
+              <div class="d-flex justify-content-between">
+                <p class="fw-bold">T.Jhonson</p>
+                <font-awesome-icon icon="fa-solid fa-quote-right" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWS Section -->
+    <section>
+      <div class="container">
+        <span>OUR EDITOR CONTENT</span>
+        <div class="d-flex">
+          <h2 class="fw-bold management">Latest</h2>
+          <h2 class="fw-bold process">News</h2>
+        </div>
+        <div class="d-flex justify-content-between">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+        <!-- CardNews -->
+        <div>
+          <CardNews :arr-news="arrNews" />
+        </div>
+      </div>
+    </section>
+
+    <!-- KNOW FIRST Section -->
+    <section>
+      <div class="container-know-section">
+        <div class="container">
+          <div class="row row-cols-2">
+            <div class="col">
+              <span>NEWSLETTER</span>
+              <div class="d-flex">
+                <h2 class="fw-bold the">Knows</h2>
+                <h2 class="fw-bold company">First</h2>
+              </div>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure corrupti
+                reprehenderit iusto,
+              </p>
+            </div>
+            <div class="col">
+              <label for="inputName" class="form-label">
+                <input
+                  id="inputName"
+                  type="text"
+                  class="form-control opacity-50"
+                  placeholder="Name"
+                />
+              </label>
+              <label for="inputEmail" class="form-label">
+                <input
+                  id="inputEmail"
+                  type="email"
+                  class="form-control opacity-50"
+                  placeholder="Email"
+                />
+              </label>
+              <div>
+                <button type="button" class="btn btn-primary text-uppercase btn-touch">
+                  SUBSCRIBE
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -165,11 +247,13 @@
 <script>
 import CardServices from "@/components/CardServices.vue";
 import CardTeam from "@/components/CardTeam.vue";
+import CardNews from "@/components/CardNews.vue";
 
 export default {
   components: {
     CardServices,
     CardTeam,
+    CardNews,
   },
   data() {
     return {
@@ -246,6 +330,29 @@ export default {
           linkedinteam: "fa-linkedin-in",
         },
       ],
+
+      arrNews: [
+        {
+          imagenews: "news-1.jpg",
+          textnews: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        },
+        {
+          imagenews: "news-2.jpg",
+          textnews: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        },
+        {
+          imagenews: "news-3.jpg",
+          textnews: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        },
+        {
+          imagenews2: "news-4.jpg",
+          textnews2: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        },
+        {
+          imagenews2: "news-5.jpg",
+          textnews2: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        },
+      ],
     };
   },
 };
@@ -298,7 +405,7 @@ export default {
     span {
       background-color: #daeced;
       font-weight: bold;
-      padding: 0.5rem;
+      padding: 0.5rem 0.6rem;
       border-radius: 50px;
     }
   }
@@ -319,6 +426,29 @@ export default {
   color: white;
   span {
     color: #058283;
+  }
+}
+.president-speech {
+  background-color: #058283;
+  border-radius: 3px;
+  padding: 1.5rem;
+  font-size: 0.7rem;
+}
+
+// KNOW FIRST Section
+.container-know-section {
+  background-image: url(../../public/bg-1.jpg);
+  background-size: cover;
+  background-position-y: 50%;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  color: white;
+  span {
+    color: #058283;
+  }
+  p {
+    color: #aaabb4;
   }
 }
 </style>

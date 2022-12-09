@@ -5,28 +5,30 @@
       <div class="d-flex justify-content-between align-items-center container p-2">
         <ul v-for="contact in arrContacts" :key="contact.days" class="d-flex">
           <li class="me-2">
-            <font-awesome-icon icon="fa-solid fa-clock" />
+            <font-awesome-icon :key="contact.clock" :icon="['fas', contact.clock]" />
           </li>
           <li>{{ `Open Hours: ${contact.days} - ${contact.hours}` }}</li>
         </ul>
         <ul v-for="contact in arrContacts" :key="contact.phone" class="d-flex">
           <li class="me-2">
-            <font-awesome-icon icon="fa-solid fa-phone" />
+            <font-awesome-icon :key="contact.tel" :icon="['fas', contact.tel]" />
           </li>
           <li class="me-4">
             {{ contact.phone }}
           </li>
           <li class="me-2">
-            <font-awesome-icon icon="fa-solid fa-envelope" />
+            <font-awesome-icon :key="contact.letter" :icon="['fas', contact.letter]" />
           </li>
           <li>{{ contact.email }}</li>
           <li class="ms-4 me-4">
-            <font-awesome-icon icon="fa-brands fa-facebook-f" />
+            <font-awesome-icon :key="contact.facebook" :icon="['fab', contact.facebook]" />
           </li>
           <li class="me-4">
-            <font-awesome-icon icon="fa-brands fa-twitter" />
+            <font-awesome-icon :key="contact.twitter" :icon="['fab', contact.twitter]" />
           </li>
-          <li><font-awesome-icon icon="fa-brands fa-linkedin-in" /></li>
+          <li>
+            <font-awesome-icon :key="contact.linkedin" class="" :icon="['fab', contact.linkedin]" />
+          </li>
         </ul>
       </div>
     </div>

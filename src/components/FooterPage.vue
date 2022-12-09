@@ -1,5 +1,8 @@
 <template>
-  <div />
+  <section>
+    <!-- CONTACT FOOTER Section -->
+    <div />
+  </section>
 </template>
 
 <script>
