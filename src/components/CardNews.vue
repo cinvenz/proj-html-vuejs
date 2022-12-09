@@ -9,7 +9,7 @@
       <div v-for="objNews in arrNews" :key="objNews.imagenews" class="card-news">
         <div class="cardimg">
           <img class="img-fluid" :src="objNews.imagenews" alt="" />
-          <p>
+          <p class="text-center">
             {{ objNews.textnews }}
           </p>
         </div>
@@ -17,7 +17,7 @@
       <div v-for="objNews2 in arrNews2" :key="objNews2.imagenews2" class="card-news">
         <div class="cardimg2">
           <img v-show="!isClicked" class="img-fluid" :src="objNews2.imagenews2" alt="" />
-          <p v-show="!isClicked">
+          <p v-show="!isClicked" class="text-center">
             {{ objNews2.textnews2 }}
           </p>
         </div>

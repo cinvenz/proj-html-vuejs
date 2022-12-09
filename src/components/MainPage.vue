@@ -343,15 +343,15 @@ export default {
       arrNews: [
         {
           imagenews: "news-1.jpg",
-          textnews: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+          textnews: "Increasing creativity is possible for everyone.",
         },
         {
           imagenews: "news-2.jpg",
-          textnews: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+          textnews: "Becaus market research is part of the business plan.",
         },
         {
           imagenews: "news-3.jpg",
-          textnews: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+          textnews: "Working from home is now a trend.",
         },
       ],
 
