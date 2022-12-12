@@ -16,8 +16,8 @@
       </div>
       <div v-for="objNews2 in arrNews2" :key="objNews2.imagenews2" class="card-news">
         <div class="cardimg2">
-          <img v-show="!isClicked" class="img-fluid" :src="objNews2.imagenews2" alt="" />
-          <p v-show="!isClicked" class="text-center">
+          <img v-show="!isClicked" class="img-fluid img-news" :src="objNews2.imagenews2" alt="" />
+          <p v-show="!isClicked" class="text-center ciao">
             {{ objNews2.textnews2 }}
           </p>
         </div>
@@ -57,15 +57,16 @@ export default {
       position: relative;
       background-color: black;
       border-radius: 7px;
+      &:hover img {
+        opacity: 1;
+      }
 
       cursor: pointer;
       img {
         border-radius: 7px;
         opacity: 0.5;
       }
-      img:hover {
-        opacity: 1;
-      }
+
       p {
         padding: 2rem;
         position: absolute;
@@ -81,13 +82,14 @@ export default {
       border-radius: 7px;
       height: 100%;
       cursor: pointer;
+      &:hover img {
+        opacity: 1;
+      }
       img {
         border-radius: 7px;
         opacity: 0.5;
       }
-      img:hover {
-        opacity: 1;
-      }
+
       p {
         padding: 2rem;
         position: absolute;

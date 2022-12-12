@@ -99,44 +99,47 @@
           from start to finish as planned.
         </p>
       </div>
-      <div class="row row-cols-5 text-center pt-3">
-        <div class="col-1 container-process" />
-        <div class="col-2 container-process">
-          <div class="container-number">
-            <span>01</span>
+
+      <div class="container2">
+        <div class="row row-cols-5 text-center pt-3 container2">
+          <div class="col-1 container-process" />
+          <div class="col-2 container-process">
+            <div class="container-number">
+              <span>01</span>
+            </div>
+            <h5 class="mt-4">Collection of Information</h5>
+            <p>Lorem ipsum dolor sit amet consectetur</p>
           </div>
-          <h5 class="mt-4">Collection of Information</h5>
-          <p>Lorem ipsum dolor sit amet consectetur</p>
-        </div>
-        <div class="col-2 container-process">
-          <div class="container-number">
-            <span>02</span>
+          <div class="col-2 container-process">
+            <div class="container-number">
+              <span>02</span>
+            </div>
+            <h5 class="mt-4">Strategic Planning</h5>
+            <p>Lorem ipsum dolor sit amet consectetur</p>
           </div>
-          <h5 class="mt-4">Strategic Planning</h5>
-          <p>Lorem ipsum dolor sit amet consectetur</p>
-        </div>
-        <div class="col-2 container-process">
-          <div class="container-number">
-            <span>03</span>
+          <div class="col-2 container-process">
+            <div class="container-number">
+              <span>03</span>
+            </div>
+            <h5 class="mt-4">Assignment of responsabilities</h5>
+            <p>Lorem ipsum dolor sit amet consectetur</p>
           </div>
-          <h5 class="mt-4">Assignment of responsabilities</h5>
-          <p>Lorem ipsum dolor sit amet consectetur</p>
-        </div>
-        <div class="col-2 container-process">
-          <div class="container-number">
-            <span>04</span>
+          <div class="col-2 container-process">
+            <div class="container-number">
+              <span>04</span>
+            </div>
+            <h5 class="mt-4">Formatting Process</h5>
+            <p>Lorem ipsum dolor sit amet consectetur</p>
           </div>
-          <h5 class="mt-4">Formatting Process</h5>
-          <p>Lorem ipsum dolor sit amet consectetur</p>
-        </div>
-        <div class="col-2 container-process">
-          <div class="container-number">
-            <span>05</span>
+          <div class="col-2 container-process">
+            <div class="container-number">
+              <span>05</span>
+            </div>
+            <h5 class="mt-4">Continuity Formalization</h5>
+            <p>Lorem ipsum dolor sit amet consectetur</p>
           </div>
-          <h5 class="mt-4">Continuity Formalization</h5>
-          <p>Lorem ipsum dolor sit amet consectetur</p>
+          <div class="col-1 container-process" />
         </div>
-        <div class="col-1 container-process" />
       </div>
     </section>
 

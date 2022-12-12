@@ -88,6 +88,7 @@
           </div>
         </div>
       </div>
+      <font-awesome-icon icon="fa-solid fa-arrow-up" class="scrollup" @click="scrollOn" />
     </div>
   </section>
 </template>
@@ -100,6 +101,11 @@ export default {
     arrAbout: Array,
     arrServices: Array,
     arrSupport: Array,
+  },
+  methods: {
+    scrollOn() {
+      window.scrollTo(0, 0);
+    },
   },
 };
 </script>
@@ -196,5 +202,15 @@ button:hover {
   height: 4rem;
   display: flex;
   align-items: center;
+}
+
+.scrollup {
+  cursor: pointer;
+  background-color: #121216;
+  margin-right: 1rem;
+  padding: 0.6rem 0.8rem;
+  border-radius: 50%;
+  font-size: 1rem;
+  color: #0d0f14;
 }
 </style>
